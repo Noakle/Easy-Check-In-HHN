@@ -1,0 +1,288 @@
+body {
+    background-color: whitesmoke;
+}
+
+hr {
+    border-top: lightgrey groove;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h4 {
+    margin-bottom: 30px;
+}
+
+div [id="login"], [id="register"], [id="pwReset"], [id="checkin"], [id="checkout"], [id="history"],[id="dsgvo"],[id="impressum"]{
+    display: none;
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 10px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-left: lightgrey groove;
+    border-right: lightgrey groove;
+}
+
+div [id="dsgvo"] p,[id="impressum"] p{
+    text-align: left;
+    margin: 10px 10px;
+}
+div [id="dsgvo"] h4,[id="impressum"] h4{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+}
+
+[id="btnDsgvo"], [id="btnImpressum"] {
+    cursor: pointer;
+}
+
+.locationsPic {
+    cursor: pointer;
+}
+
+button[id="btnLogin"], [id="BTNSignUp"]{
+    padding: 10px 60px;
+    background-color: #ffb54f;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button[id="signUpBTN"], [id="btnHistory"], [id="btnBack"], [id="backToLogin"], [id="btnBackDsgvo"], [id="btnBackImpressum"]{
+    padding: 5px 20px;
+    background-color: #ffb54f;
+    color: black;
+    cursor: pointer;
+}
+
+button[id="btnBack"] {
+    margin-bottom: 20px;
+}
+
+button[id= "historyBTN"]{
+    padding: 5px 20px;
+    margin-top: 3%;
+    background-color: #ffb54f;
+    color: black;
+    cursor: pointer;
+}
+
+button[id= "pwResetMailBTN"], [id= "checkoutBTN"]{
+    padding: 10px 60px;
+    margin-top: 3%;
+    background-color: #ffb54f;
+    color: black;
+    cursor: pointer;
+}
+
+div [class="checkboxes"] {
+    width: auto;
+}
+
+div [class="checkboxText"]{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div [class="notImportant"]{
+    font-size: 14px;
+}
+
+div [class="important"] small{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-check-label {
+    padding: 10px 10px;
+}
+
+[type="email"], [type="password"], [type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+[type="email"], [type="password"] {
+    width: 270px;
+}
+
+[type="text"] {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 120px;
+}
+
+div [class="locationsPic"] {
+    margin: auto;
+    padding: 1px;
+    border: 1px solid #030303;
+    border-radius: 3px;
+}
+
+[class="locationLine"] {
+    margin: 1px 1px  0 0;
+    border: 1px none #030303;
+    border-bottom-style: solid;
+}
+
+.btnControl .btn {
+    margin-bottom: 10px;
+}
+
+table {
+    font-size: 12px;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: flex;
+}
+
+.centered {
+    margin: auto;
+}
+
+/* HISTORY */
+.table-scrollable {
+    /* set the height to enable overflow of the table */
+    max-height: 260px;
+
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.table-scrollable thead th {
+    border: none;
+}
+
+.table-scrollable thead th {
+    /* Set header to stick to the top of the container. */
+    position: sticky;
+    top: 0;
+
+    /* This is needed otherwise the sticky header will be transparent
+    */
+    background-color: white;
+
+    /* Because bootstrap adds `border-collapse: collapse` to the
+     * table, the header boarders aren't sticky.
+     * So, we need to make some adjustments to cover up the actual
+     * header borders and created fake borders instead
+     */
+    margin-top: -1px;
+    margin-bottom: -1px;
+
+    /* This is our fake border (see above comment) */
+    box-shadow: inset 0 1px 0 #dee2e6,
+    inset 0 -1px 0 #dee2e6;
+}
+
+/* MODALS */
+.simple-modal {
+    color: #636363;
+    width: 325px;
+    font-size: 14px;
+}
+.simple-modal .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.simple-modal .modal-header {
+    border-bottom: none;
+    position: relative;
+}
+.simple-modal h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+}
+.simple-modal .form-control, .simple-modal .btn {
+    min-height: 40px;
+    border-radius: 3px;
+}
+.simple-modal .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.simple-modal .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.simple-modal .icon-box {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.simple-modal.error-modal .icon-box {
+    background: #ef513a;
+}
+.simple-modal.info-modal .icon-box {
+    background: #82ce34;
+}
+.simple-modal .icon-box i {
+    font-size: 56px;
+    position: relative;
+    top: 4px;
+}
+.simple-modal.modal-dialog {
+    margin-top: 80px;
+}
+.simple-modal.error-modal .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #ef513a;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+.simple-modal.info-modal .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #82ce34;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    border: none;
+}
+.simple-modal.error-modal .btn:hover, .simple-modal.error-modal .btn:focus {
+    background: #da2c12;
+    outline: none;
+}
+.simple-modal.info-modal .btn:hover, .simple-modal.info-modal .btn:focus {
+    background: #6fb32b;
+    outline: none;
+}
+
+/* SIGN IN ERROR */
+.hideErrorAlert {
+    display: none;
+}
+
+.showErrorAlert {
+    display: block;
+}
+
+

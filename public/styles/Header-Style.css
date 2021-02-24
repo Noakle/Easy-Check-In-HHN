@@ -1,0 +1,50 @@
+.navbar{
+    background: #354e91;
+}
+
+.navbar-logo{
+    width: 60px;
+    cursor: pointer;
+}
+
+.navbar-nav > li{
+    padding: 10px 15px;
+}
+.navbar-nav > li > a{
+    padding:0 15px;
+    font-size: 18px;
+    color: lightgrey;
+}
+
+.navbar-nav > li{
+    padding:0 15px;
+    font-size: 18px;
+    color: lightgrey;
+}
+
+
+.nav-text [id="hsLabel"]{
+    cursor: pointer;
+}
+
+.navbar-nav li[id="nav-User"],[id="nav-SignOut"]{
+    /*display: none;*/
+}
+
+.footer{
+    background: #354e91;
+    padding: 10px;
+    color: #dee2e6;
+}
+.footer a{
+    padding: 5px 15px;
+    margin: 15px;
+    font-size: 13px;
+    color: lightgrey;
+}
+
+
+
+
+
+

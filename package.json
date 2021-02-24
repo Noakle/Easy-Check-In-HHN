@@ -1,0 +1,27 @@
+{
+  "name": "labswp_2020_ws_team1",
+  "version": "1.0.2",
+  "description": "Easy Check-In HHN web application",
+  "main": "public/build/bundle.js",
+  "dependencies": {
+    "@types/jest": "^26.0.15",
+    "firebase": "^8.2.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "webpack",
+    "serve": "firebase emulators:start",
+    "deploy": "firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket-student.it.hs-heilbronn.de/scm/labswpse/labswp_2020_ws_team1.git"
+  },
+  "author": "LABWS Team 1",
+  "license": "ISC"
+}
